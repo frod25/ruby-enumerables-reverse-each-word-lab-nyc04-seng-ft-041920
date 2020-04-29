@@ -1,10 +1,7 @@
 require 'pry'
 
 def reverse_each_word(sentence)
-  reversed = sentence.split(/ /)
-  reversed.map do |word|
-    word.reverse
-  end
+  reversed = sentence.split(/ /).map { |word| word.reverse }
 end
 
 binding.pry
