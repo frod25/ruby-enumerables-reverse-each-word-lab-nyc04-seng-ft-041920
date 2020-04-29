@@ -1,5 +1,5 @@
 require 'pry'
 
 def reverse_each_word(sentence)
-  reversed = sentence.split(/ /).map { |word| word.reverse }.join(" ")
+  reversed = sentence.split(/ /).collect { |word| word.reverse }.join(" ")
 end
